@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'MighaMedium';
+    src: local('MighaMedium'), url('../assets/fonts/Migha-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.quiz-container h3{
+    text-transform: uppercase;
+    font-family: 'MighaMedium', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+}
+  
+.cocktail-ingredients {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 15px;
+    width: auto;
+    margin: 25px;
+    border:  1px solid whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+}
+  
+.cocktail-ingredients li {
+    text-align: center;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0.3em;
+}
+  
+.cocktail-options {
+    display: flex;
+    justify-content: center;
+}
+  
+.cocktail-options button {
+    margin: 0 1em;
+    padding: 0.65em 1.5em;
+    border-radius: 3%;
+    border: none;
+    font-size: 1.2em;
+}
+
+.cocktail-options button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+}
+
+.cocktail-options button[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.message {
+    font-family: 'MighaMedium', sans-serif;
+    letter-spacing: 0.1em;
+    color: rgb(239, 149, 46);
+    margin: 0.5em;
+    font-weight: bold;
+    padding: 0.2em;
+    font-size: 3em;
+    text-shadow: 5px 6px rgba(0, 0, 0, 0.74);
+}
+
+.new-game {
+    padding: 5px;
+    border-radius: 3%;
+    border: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.new-game:hover {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+}

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'MighaLight';
+    src: local('MighaLight'), url('../assets/fonts/Migha-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MighaMedium';
+    src: local('MighaMedium'), url('../assets/fonts/Migha-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.history-container {
+    width: 95%;
+    margin: 1em auto;
+    border: 1px whitesmoke solid;
+    padding: 0 0.7em;
+    box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.219);
+}
+.history-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'MighaMedium', sans-serif;
+    font-size: 1.7em;
+    margin: 0.5em auto;
+}
+.history-container p {
+    font-family: Arial, sans-serif;
+    margin: 0 1em;
+    padding-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+    .history-container {
+      width: 90%;
+      float: none; /* Elimina el posicionamiento flotante en pantallas más pequeñas */
+      margin: 1em auto; 
+    }
+}
+
+

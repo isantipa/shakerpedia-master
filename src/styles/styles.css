@@ -1,0 +1,564 @@
+@font-face {
+    font-family: 'CCAfterglow';
+    src: local('CCAfterglow'), url('../assets/fonts/CCAfterglow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MighaLight';
+    src: local('MighaLight'), url('../assets/fonts/Migha-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MighaMedium';
+    src: local('MighaMedium'), url('../assets/fonts/Migha-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* #region Header-stufs*/
+
+.header {
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid whitesmoke;
+}
+.header .logo{
+    font-size: 4.5em;
+    font-family: 'CCAfterglow', sans-serif;
+    text-shadow: 2px 2px 10px black;
+    display: block;
+    padding-top: 0.25em;
+}
+.header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0.5em 0;
+}
+.header li{
+    font-size: 1.2em;
+    font-family: 'MighaLight', sans-serif;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 0.5em;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0.16em;
+}
+.header li a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.7s ease;
+}
+.header li a:hover{
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px 4px rgba(255, 255, 255, 0.29);
+    font-weight: bold;
+    padding: 0.3em;
+}
+.header li a:visited {
+    color: inherit;
+}
+/* #endregion*/
+
+/* #region Slider-stufs*/
+.slide-content {
+    position: relative;
+    margin: 1.5em auto;
+    width: 90%;
+    overflow: hidden;
+    border: solid white 5px;
+}
+/*Espacio para asegurar que ocupa todo el espacio de su contenedor y no da fallas en algunos navegadores*/
+.slide-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+} 
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;           
+}
+
+#slider img {
+    width: 100%;
+    height: 28em;
+    object-fit: cover;
+    
+}
+  
+#slider .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.578);
+    backdrop-filter: blur(7px);
+    color: white;
+    text-align: center;
+}
+  
+#slider .text-container h2 {
+    font-size: 3vw;
+}
+  
+#slider .text-container p {
+    font-size: 2vw;
+}
+  
+#prev-slide,
+#next-slide {
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 3em;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: all 0.9s ease;
+}
+  
+#prev-slide:hover,
+#next-slide:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.74);
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    #slider .text-container {
+        bottom: 0;
+        left: 55%;
+        transform: translateX(-50%);
+        max-width: 90%;
+    }
+  
+    #slider .text-container h2 {
+        font-size: 4vw;
+    }
+  
+    #slider .text-container p {
+        font-size: 3.3vw;
+    }
+}
+/* #endregion*/
+
+/* #region History-stuffs*/
+.history-container {
+    width: 95%;
+    margin: 1em auto;
+    border: 1px whitesmoke solid;
+    padding: 0 0.7em;
+    box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.219);
+}
+.history-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'MighaMedium', sans-serif;
+    font-size: 1.7em;
+    margin: 0.5em auto;
+}
+.history-container p {
+    font-family: Arial, sans-serif;
+    margin: 0 1em;
+    padding-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+    .history-container {
+      width: 90%;
+      float: none; /* Elimina el posicionamiento flotante en pantallas más pequeñas */
+      margin: 1em auto; 
+    }
+}
+/* #endregion*/
+
+/* #region About-stuffs*/
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-container{
+    width: 40%;
+    margin: 1em 1em 1em 5em;
+    border: 1px whitesmoke solid;
+    padding: 0 0.7em;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.219);
+}
+.img-container{
+    display: flex;            
+    align-items: center;      
+    justify-content: center; 
+    
+    width: 40%;
+    min-width: 30%;
+    margin: 1em 5em 1em 1em;
+    padding: 0 0.7em;
+}
+
+.about-container h2{
+    text-align: center;
+    font-family: 'MighaMedium', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    margin: 0.5em auto;
+}
+
+.about-container p{
+    margin: 0 1em 1em;
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border: solid 1px whitesmoke;
+    box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.219);
+}
+
+@media screen and (max-width: 980px) {
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-container, .img-container {
+      width: 90%;
+      margin: 1em;
+    }
+}
+/* #endregion*/
+/* #region Footer-stuffs*/
+.footer {
+    width: 100%;
+    margin-top: 2em; 
+    clear: both; /* Limpia los flotantes anteriores */
+  }
+.legal-container {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 0.7em;
+    margin: 0 8em;
+}
+.rrss-container {
+    display: flex;
+    justify-content: center;
+}  
+.rrss-container img {
+    width: 1.7em;
+    margin:0.5em;
+    position: relative;
+    transition: all 0.9s ease;
+} 
+.rrss-container img:hover {
+    box-shadow: 0 0 4px 2px white;
+}
+/* #endregion*/
+
+/* #region Library-stuffs*/
+.library-container h3{
+    text-align: center;
+    font-family: 'MighaLight', sans-serif;
+    font-size: 1.5em;
+}
+.alphabet-box {
+    text-align: center;
+    border: solid 1px black;
+    margin: 1em 1em;
+    padding: 0.5em 0;
+    background-color: rgba(0, 0, 0, 0.464);
+    border: solid 1px whitesmoke;
+} 
+.alphabet-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
+.alphabet-box li {
+    display: inline-block;
+    margin-right: 0.7em;
+}
+.alphabet-box button {
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    font-size: 1em;
+    font-family: 'MighaLight',sans-serif;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: all 0.9s ease;
+}
+.alphabet-box button:hover {
+    font-weight: bolder;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.74);
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.letter-container {
+    text-align: center;
+    margin: 1em 1em;
+    padding: 0.5em 0;
+    border: 1px solid whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    column-gap: 1em;
+}
+.letter-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.letter-container li {
+    margin: 1em;
+    break-inside: avoid;
+}
+.letter-container button {
+    font-size: 1em;
+    font-family: Arial ,sans-serif;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: all 0.9s ease;
+}
+.letter-container button:hover {
+    font-weight: bolder;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.74);
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 0.3em;
+}
+@media screen and (max-width: 600px) {
+    .letter-container {
+        column-count: 3;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .letter-container {
+        column-count: 4;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .letter-container {
+        column-count: 5;
+    }
+}
+
+.coktail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.searchname-container {
+    justify-content: center;
+    border: solid 1px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    margin: 1.5 em auto;
+    padding: 0.5em 0;
+    width: 22em;
+}
+.searchname-container h2 {
+    font-family: 'MighaLight',sans-serif;
+    margin: 0 0.7em 0.7em;
+    text-align: center;
+}
+.searchname-container input {
+    margin: 0 2.6em 0.7em;
+    padding: 0.5em;
+}
+.searchname-container button {
+    padding: 0.5em;
+    border: solid 2px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    border-radius: 5%;
+    color: whitesmoke;
+    transition: all 0.7s ease;
+}
+.searchname-container button:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.135);
+}
+
+.searchingredient-container {
+    justify-content: center;
+    border: solid 1px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    margin: 1.5em auto;
+    padding: 0.5em 0;
+    width: 22em;
+}
+.searchingredient-container h2 {
+    font-family: 'MighaLight',sans-serif;
+    margin: 0 0.7em 0.7em;
+    text-align: center;
+}
+.searchingredient-container input{
+    margin: 0 2.6em 0.7em;
+    padding: 0.5em;
+}
+.searchingredient-container button {
+    padding: 0.5em;
+    border: solid 2px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    border-radius: 5%;
+    color: whitesmoke;
+    transition: all 0.7s ease;
+}
+.searchingredient-container button:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.135);
+}
+
+.coktail-container {
+    margin: 1em;
+}
+
+#cocktail-box {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: whitesmoke 1px solid;
+    margin: 1em auto;
+    padding: 1em;
+    width: 20em;
+    height: auto;
+    transition: all 0.7s ease;
+    box-shadow: 0 0 5px 4px rgba(255, 255, 255, 0.219);
+    background-color: rgba(0, 0, 0, 0.464);
+}
+#cocktail-box:hover {
+    box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.135);
+}
+#cocktail-box h4{
+    font-family: 'MighaLight',sans-serif;
+    text-align: center ;
+    font-size: 1.6em;
+    margin: 0;
+}
+#cocktail-box img{
+    height: 225px;
+    width: 90%;
+    margin: 1em auto;
+    object-fit: cover;
+    display: block;
+}
+#cocktail-box ul{
+    list-style: none;
+    margin: 0;
+}
+#cocktail-box li{
+    margin: 0 1em;
+}
+#cocktail-box .favorite-button {
+    width: 40px ;
+    height: 40px ;
+    margin: 0;
+} 
+/* #endregion*/
+
+/* #region Quiz-stuffs*/
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.quiz-container h3{
+    text-transform: uppercase;
+    font-family: 'MighaMedium', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+}
+  
+.cocktail-ingredients {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 15px;
+    width: auto;
+    margin: 25px;
+    border:  1px solid whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+}
+  
+.cocktail-ingredients li {
+    text-align: center;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0.3em;
+}
+  
+.cocktail-options {
+    display: flex;
+    justify-content: center;
+}
+  
+.cocktail-options button {
+    margin: 0 1em;
+    padding: 0.65em 1.5em;
+    border-radius: 3%;
+    border: none;
+    font-size: 1.2em;
+}
+
+.cocktail-options button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+}
+
+.cocktail-options button[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.message {
+    font-family: 'MighaMedium', sans-serif;
+    letter-spacing: 0.1em;
+    color: rgb(239, 149, 46);
+    margin: 0.5em;
+    font-weight: bold;
+    padding: 0.2em;
+    font-size: 3em;
+    text-shadow: 5px 6px rgba(0, 0, 0, 0.74);
+}
+
+.new-game {
+    padding: 5px;
+    border-radius: 3%;
+    border: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.new-game:hover {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+}
+/* #endregion*/
+
+/* #region Favorite-stuffs*/
+.favorites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* #endregion*/

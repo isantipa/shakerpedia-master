@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    margin-top: 2em; 
+    clear: both; /* Limpia los flotantes anteriores */
+  }
+.legal-container {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 0.7em;
+    margin: 0 8em;
+}
+.rrss-container {
+    display: flex;
+    justify-content: center;
+}  
+.rrss-container img {
+    width: 1.7em;
+    margin:0.5em;
+    position: relative;
+    transition: all 0.9s ease;
+} 
+.rrss-container img:hover {
+    box-shadow: 0 0 4px 2px white;
+}

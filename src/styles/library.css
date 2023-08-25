@@ -1,0 +1,196 @@
+.library-container h3{
+    text-align: center;
+    font-family: 'MighaLight', sans-serif;
+    font-size: 1.5em;
+}
+.alphabet-box {
+    text-align: center;
+    border: solid 1px black;
+    margin: 1em 1em;
+    padding: 0.5em 0;
+    background-color: rgba(0, 0, 0, 0.464);
+    border: solid 1px whitesmoke;
+} 
+.alphabet-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
+.alphabet-box li {
+    display: inline-block;
+    margin-right: 0.7em;
+}
+.alphabet-box button {
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    font-size: 1em;
+    font-family: 'MighaLight',sans-serif;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: all 0.9s ease;
+}
+.alphabet-box button:hover {
+    font-weight: bolder;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.74);
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.letter-container {
+    text-align: center;
+    margin: 1em 1em;
+    padding: 0.5em 0;
+    border: 1px solid whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    column-gap: 1em;
+}
+.letter-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.letter-container li {
+    margin: 1em;
+    break-inside: avoid;
+}
+.letter-container button {
+    font-size: 1em;
+    font-family: Arial ,sans-serif;
+    border: none;
+    background: transparent;
+    color: white;
+    transition: all 0.9s ease;
+}
+.letter-container button:hover {
+    font-weight: bolder;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.74);
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 0.3em;
+}
+@media screen and (max-width: 600px) {
+    .letter-container {
+        column-count: 3;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .letter-container {
+        column-count: 4;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .letter-container {
+        column-count: 5;
+    }
+}
+
+.coktail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.searchname-container {
+    border: solid 1px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    margin: 1.5em auto;
+    padding: 0.5em 0;
+    width: 22em;
+}
+.searchname-container h2 {
+    font-family: 'MighaLight',sans-serif;
+    margin: 0 0.7em 0.7em;
+    text-align: center;
+}
+.searchname-container input {
+    margin: 0 2.6em 0.7em;
+    padding: 0.5em;
+}
+.searchname-container button {
+    padding: 0.5em;
+    border: solid 2px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    border-radius: 5%;
+    color: whitesmoke;
+    transition: all 0.7s ease;
+}
+.searchname-container button:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.135);
+}
+
+.searchingredient-container {
+
+    border: solid 1px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    margin: 1.5em auto;
+    padding: 0.5em 0;
+    width: 22em;
+}
+.searchingredient-container h2 {
+    font-family: 'MighaLight',sans-serif;
+    margin: 0 0.7em 0.7em;
+    text-align: center;
+}
+.searchingredient-container input{
+    margin: 0 2.6em 0.7em;
+    padding: 0.5em;
+}
+.searchingredient-container button {
+    padding: 0.5em;
+    border: solid 2px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.464);
+    border-radius: 5%;
+    color: whitesmoke;
+    transition: all 0.7s ease;
+}
+.searchingredient-container button:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.135);
+}
+
+.coktail-container {
+    margin: 1em;
+}
+
+#cocktail-box {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: whitesmoke 1px solid;
+    margin: 1em auto;
+    padding: 1em;
+    width: 20em;
+    height: auto;
+    transition: all 0.7s ease;
+    box-shadow: 0 0 5px 4px rgba(255, 255, 255, 0.219);
+    background-color: rgba(0, 0, 0, 0.464);
+}
+#cocktail-box:hover {
+    box-shadow: 0 0 5px 8px rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.135);
+}
+#cocktail-box h4{
+    font-family: 'MighaLight',sans-serif;
+    text-align: center ;
+    font-size: 1.6em;
+    margin: 0;
+}
+#cocktail-box img{
+    height: 225px;
+    width: 90%;
+    margin: 1em auto;
+    object-fit: cover;
+    display: block;
+}
+#cocktail-box ul{
+    list-style: none;
+    margin: 0;
+}
+#cocktail-box li{
+    margin: 0 1em;
+}
+#cocktail-box .favorite-button {
+    width: 40px ;
+    height: 40px ;
+    margin: 0;
+}
